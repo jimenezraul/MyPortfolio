@@ -135,7 +135,7 @@ header nav ul li a:hover {
 }
 
 .section-title {
-    width: 70%;
+    width: 80%;
     text-align: end;
     font-size: 48px;
     padding: 20px;
@@ -143,6 +143,7 @@ header nav ul li a:hover {
 }
 
 .work figure {
+    opacity: 0.8;
     position: relative;
 }
 
@@ -159,13 +160,12 @@ header nav ul li a:hover {
 
 
 .work figure img {
-    opacity: 0.8;
     width: 100%;
     border: 9px solid var(--secondary-color);
     border-radius: 8px;
 }
 
-.work figure img:hover {
+.work figure:hover {
     opacity: 1;
 }
 
@@ -189,4 +189,19 @@ header nav ul li a:hover {
 .my-work figure:last-child{
     padding-top: 8px;
     padding-left: 4px;
+}
+
+.right-col h3, .right-col p, .my-work h3, .my-work p {
+    color: var(--dark-secondary);
+}
+
+.contact .right-col{
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact .right-col a{
+    color: var(--dark-secondary);
+    font-size: 25px;
+    font-weight: bolder;
 }
