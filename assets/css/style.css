@@ -23,7 +23,7 @@ body {
 
 /* Adding padding to every section */
 section {
-    padding: 20px 60px;
+    padding: 20px 30px;
 }
 
 /* header */
@@ -96,7 +96,7 @@ footer h3, footer p {
 
 /* Hero */
 .hero {
-    padding: 100px 60px;
+    padding: 75px 60px;
     background-color: var(--dark-secondary);
 }
 
@@ -262,8 +262,8 @@ footer h3, footer p {
         width: 80%;
         text-align: center;
         font-size: 45px;
-        padding: 30px;
-        border: 0;
+        padding: 40px;
+        border-right: 0;
         border-bottom: 5px solid var(--dark-primary);
     }
 
@@ -283,6 +283,7 @@ footer h3, footer p {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+
     .hero-form button {
         width: 100%;
     }
@@ -296,8 +297,8 @@ footer h3, footer p {
         width: 80%;
         text-align: center;
         font-size: 35px;
-        padding: 20px;
-        border: 0;
+        padding: 20px 40px;
+        border-right: 0;
         border-bottom: 5px solid var(--dark-primary);
     }
 
@@ -310,6 +311,7 @@ footer h3, footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 
     .hero-col h1, .hero-col h2 {
@@ -319,6 +321,10 @@ footer h3, footer p {
 
     .hero-pic {
         width: 300px;
+    }
+
+    .about p {
+        text-align: center;
     }
 
     .my-work figure {
@@ -336,13 +342,20 @@ footer h3, footer p {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
     section {
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
 
     .hero-form button {
         width: 100%;
     }
 
+    .work h2{
+        padding: 20px;
+    }
+
+    .right-col{
+        padding: 10px 5px;
+    }
     .left-col {
         display: flex;
         justify-content: center;
@@ -352,8 +365,8 @@ footer h3, footer p {
         width: 80%;
         text-align: center;
         font-size: 35px;
-        padding: 20px;
-        border: 0;
+        padding: 20px 5px;
+        border-right: 0;
         border-bottom: 5px solid var(--dark-primary);
     }
 
@@ -375,10 +388,11 @@ footer h3, footer p {
     }
 
     .hero-pic {
-        width: 260px;
+        width: 250px;
     }
 
     .about p {
+        text-align: center;
         padding: 20px 20px;
     }
 
