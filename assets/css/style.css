@@ -99,7 +99,7 @@ footer h3, footer p {
 
 /* Hero */
 .hero {
-    padding: 75px 60px;
+    padding: 25px 60px 75px 60px;
     background-color: var(--dark-secondary);
 }
 
@@ -282,6 +282,7 @@ footer h3, footer p {
         padding: 10px;
         font-size: 25px;
     }
+    
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -340,6 +341,11 @@ footer h3, footer p {
         padding: 10px;
         font-size: 25px;
     }
+
+    .my-work figure:first-child, .my-work figure:last-child {
+        padding-right:0;
+        padding-left: 0;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -349,7 +355,7 @@ footer h3, footer p {
     }
 
     .hero{
-        padding: 75px 40px ;
+        padding: 25px 40px 75px 40px ;
     }
 
     .hero-col:first-child {
