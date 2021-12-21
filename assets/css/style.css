@@ -1,4 +1,4 @@
-/* setting variable colors to use in the project */
+/* Variable Colors */
 :root {
     --primary-color: rgb(235, 233, 233);
     --secondary-color: #89bffd;
@@ -8,23 +8,25 @@
 }
 
 * {
-    /* remove default margin, padding and font styles on all elements */
+    /* Remove default margin, padding and font styles on all elements */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    /* set color and font-family to the body */
+    /* Set color and font-family to the body */
     color: var(--dark-secondary);
     background-color: var(--bg-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Adding padding to every section */
 section {
     padding: 20px 60px;
 }
 
+/* header */
 header {
     padding: 20px 35px;
     background-color: var(--dark-secondary);
@@ -41,8 +43,7 @@ header h1 {
 }
 
 header nav {
-    display: flex;
-    align-items: center;
+    margin: 7px 0;
 }
 
 header nav ul {
@@ -59,9 +60,11 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     text-decoration: none;
-    border: 1px solid var(--dark-secondary);;
+    border: 1px solid var(--dark-secondary);
+    ;
 }
 
+/* Navigation hover values */
 header nav ul li a:hover {
     background-color: var(--secondary-color);
     color: var(--dark-secondary);
@@ -70,7 +73,8 @@ header nav ul li a:hover {
     box-shadow: 0 10px 25px rgba(32, 32, 32, 0.6);
 }
 
-footer{
+/* Footer */
+footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -79,16 +83,18 @@ footer{
     padding: 40px;
 }
 
-footer h3, footer p{
+footer h3, footer p {
     color: var(--primary-color);
     padding: 0 10px;
 }
 
+/* Responsive row */
 .flex-row {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Hero */
 .hero {
     padding: 100px 60px;
     background-color: var(--dark-secondary);
@@ -125,21 +131,24 @@ footer h3, footer p{
 }
 
 .hero-col h1, .hero-col h2 {
-    text-align: center;
+    text-align: start;
     color: var(--primary-color);
 }
 
+/* About */
 .about p {
     font-size: 24px;
     padding: 20px 0;
 }
 
+/* Left Column */
 .left-col {
     display: flex;
     flex: 1 20%;
     justify-content: end;
 }
 
+/* Right Column */
 .right-col {
     flex: 2 80%;
     display: flex;
@@ -148,30 +157,33 @@ footer h3, footer p{
     padding: 10px 20px;
 }
 
+/* Section Title */
 .section-title {
-    width: 80%;
+    width: 90%;
     text-align: end;
-    font-size: 48px;
-    padding: 20px;
+    font-size: 40px;
+    padding: 10px;
     border-right: 5px solid var(--dark-primary);
 }
 
+/* Work */
+/* Work Tile Opacity */
 .work figure {
     opacity: 0.8;
     position: relative;
 }
 
+/* Work Inside Tag */
 .work figcaption {
     background-color: var(--secondary-color);
-    padding: 20px;
-    font-size: 32px;
+    padding: 10px;
+    font-size: 28px;
     position: absolute;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    bottom: 15%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    bottom: 10%;
     left: 8px;
 }
-
 
 .work figure img {
     width: 100%;
@@ -179,6 +191,7 @@ footer h3, footer p{
     border-radius: 8px;
 }
 
+/* Work Tile on Hover Opacity to 1 */
 .work figure:hover {
     opacity: 1;
 }
@@ -189,18 +202,18 @@ footer h3, footer p{
     justify-content: space-between;
 }
 
-.my-work figure{
+.my-work figure {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
 }
 
-.my-work figure:first-child{
+.my-work figure:first-child {
     padding-top: 8px;
     padding-right: 4px;
 }
 
-.my-work figure:last-child{
+.my-work figure:last-child {
     padding-top: 8px;
     padding-left: 4px;
 }
@@ -209,13 +222,175 @@ footer h3, footer p{
     color: var(--dark-secondary);
 }
 
-.contact .right-col{
+/* Contact */
+.contact .right-col {
     align-items: center;
     justify-content: space-around;
 }
 
-.contact .right-col a{
+.contact .right-col a {
     color: var(--dark-secondary);
     font-size: 25px;
     font-weight: bolder;
+    padding: 10px 20px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .section-title {
+        width: 80%;
+        text-align: center;
+        font-size: 45px;
+        padding: 30px;
+        border: 0;
+        border-bottom: 5px solid var(--dark-primary);
+    }
+
+    .hero-pic {
+        width: 250px;
+    }
+
+    .left-col {
+        justify-content: center;
+    }
+
+    .work figcaption {
+        padding: 10px;
+        font-size: 25px;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .hero-form button {
+        width: 100%;
+    }
+
+    .left-col {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-title {
+        width: 80%;
+        text-align: center;
+        font-size: 35px;
+        padding: 20px;
+        border: 0;
+        border-bottom: 5px solid var(--dark-primary);
+    }
+
+    .hero-col:first-child {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .hero-col:last-child {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-col h1, .hero-col h2 {
+        text-align: center;
+        color: var(--primary-color);
+    }
+
+    .hero-pic {
+        width: 300px;
+    }
+
+    .my-work figure {
+        flex: initial;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .work figcaption {
+        padding: 10px;
+        font-size: 25px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    section {
+        padding: 10px 20px;
+    }
+
+    .hero-form button {
+        width: 100%;
+    }
+
+    .left-col {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-title {
+        width: 80%;
+        text-align: center;
+        font-size: 35px;
+        padding: 20px;
+        border: 0;
+        border-bottom: 5px solid var(--dark-primary);
+    }
+
+    .hero-col:first-child {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .hero-col:last-child {
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .hero-col h1, .hero-col h2 {
+        text-align: center;
+        color: var(--primary-color);
+    }
+
+    .hero-pic {
+        width: 260px;
+    }
+
+    .about p {
+        padding: 20px 20px;
+    }
+
+    .my-work figure {
+        flex: initial;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .work figcaption {
+        padding: 10px;
+        font-size: 20px;
+    }
+
 }
