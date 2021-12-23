@@ -108,7 +108,7 @@ footer h3, footer p {
 }
 
 .hero-col:first-child {
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 30px;
 }
 
@@ -152,7 +152,7 @@ footer h3, footer p {
 .left-col {
     display: flex;
     flex: 1;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 /* Right Column */
@@ -312,8 +312,8 @@ footer h3, footer p {
         font-size: 18px;
     }
 
-    .hero-form button {
-        width: 100%;
+    .right-col{
+        flex:auto;
     }
 
     .left-col {
@@ -351,6 +351,10 @@ footer h3, footer p {
         width: 300px;
     }
 
+    .container{
+        width: 100%;
+    }
+
     .about p {
         text-align: center;
     }
@@ -385,7 +389,6 @@ footer h3, footer p {
     header nav ul li a{
         font-size: 18px;
     }
-
     .hero{
         padding: 25px 40px 75px 40px ;
     }
