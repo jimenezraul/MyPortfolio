@@ -200,7 +200,7 @@ footer h3, footer p {
     position: absolute;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    bottom: 10%;
+    bottom: 20px;
     left: 8px;
 }
 
@@ -290,7 +290,7 @@ footer h3, footer p {
 
     .work figcaption {
         padding: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .contact .right-col a {
@@ -313,8 +313,6 @@ footer h3, footer p {
     .section-title {
         font-size: 35px;
         padding: 20px 40px;
-        border-right: 0;
-        border-bottom: 5px solid var(--dark-primary);
     }
 
     .hero-col:first-child {
@@ -344,17 +342,6 @@ footer h3, footer p {
 
     .about p {
         text-align: center;
-    }
-
-    .my-work figure {
-        flex: initial;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .work figcaption {
-        padding: 10px;
-        font-size: 25px;
     }
 }
 
@@ -419,8 +406,6 @@ footer h3, footer p {
 
     .section-title {
         padding: 20px 5px;
-        border-right: 0;
-        border-bottom: 5px solid var(--dark-primary);
     }
 
     .about p {
