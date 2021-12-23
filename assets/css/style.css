@@ -327,11 +327,6 @@ footer h3, footer p {
         padding: 0;
     }
 
-    .hero-col h1, .hero-col h2 {
-        text-align: center;
-        color: var(--primary-color);
-    }
-
     .hero-pic {
         width: 300px;
     }
