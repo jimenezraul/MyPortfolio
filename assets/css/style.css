@@ -64,6 +64,7 @@ header nav ul li a {
     font-size: 1.55vw;
     padding: 10px 15px;
     font-weight: lighter;
+    border-top: 4px solid transparent;
     border-bottom: 4px solid var(--dark-primary);
     text-decoration: none;
     transition: ease-in-out 0.2s;
@@ -72,7 +73,7 @@ header nav ul li a {
 /* Navigation hover values */
 header nav ul li a:hover {
     background-color: var(--dark-primary);
-    box-shadow: 0 10px 25px rgba(32, 32, 32, 0.6);
+    box-shadow: 5px 10px 10px rgba(32, 32, 32, 0.3);
 }
 
 /* Footer */
