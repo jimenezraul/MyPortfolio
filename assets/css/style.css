@@ -119,6 +119,7 @@ footer h3, footer p {
     align-items: flex-start;
 }
 
+/* Hero image size and styling */
 .hero-pic {
     width: 300px;
     border-radius: 50%;
@@ -137,6 +138,7 @@ footer h3, footer p {
     color: var(--primary-color);
 }
 
+/* Container with 90% width and centered */
 .container {
     width: 90%;
     margin: 0 auto;
@@ -208,12 +210,12 @@ footer h3, footer p {
     color: var(--primary-color);
 }
 
-.card{
+.card {
     flex: 1 0 50%;
     padding: 2px;
 }
 
-.card:first-child{
+.card:first-child {
     flex: 1 0 100%;
 }
 
@@ -239,6 +241,7 @@ footer h3, footer p {
     transition: ease-in-out 0.1s;
 }
 
+/* Contact links on Hover */
 .contact .right-col a:hover {
     background-color: var(--dark-secondary);
     color: var(--primary-color);
@@ -413,7 +416,7 @@ footer h3, footer p {
         font-size: 20px;
     }
 
-    .card{
+    .card {
         flex: 1 0 100%;
     }
 
